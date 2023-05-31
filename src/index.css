@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans JP', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: rgb(81, 174, 81);
+}
+
+h1 {
+  font-size: 6em;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.app{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-image:   
+  url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'), 
+  url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
+  url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
+  url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png'),
+  url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
+background-repeat: repeat-x;
+background-position: 
+  0 20%,
+  0 100%,
+  0 50%,
+  0 100%,
+  0 0;
+background-size: 
+  2500px,
+  800px,
+  500px 200px,
+  1000px,
+  400px 260px;
+animation: 50s para infinite linear;
+}
+
+.app:before{
+  content : "";
+  background: url("./img/bg7.jpg") no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.app .container{
+  max-width: 700px;
+  height: 700px;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  top: 10%;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+}
+
+.app .top{
+width: 100%;
+margin: 1rem auto;
+}
+
+.app .description {
+  position: relative;
+  right: -90%;
+  transform-origin: 0,0;
+  transform: rotate(-270deg);
+}
+
+.app .bottom
+{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.2)
+}
+
+.bold{
+  font-weight: 700;
+}
+
+.app .search{
+  text-align: center;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.app input {
+  padding: .7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background:rgba(  255, 255, 255, 0.1)
+}
+
+::placeholder
+{
+  color: rgb(0, 0, 0);
+}
+
+@keyframes para {
+  100% {
+    background-position: 
+      -5000px 20%,
+      -800px 95%,
+      500px 50%,
+      1000px 100%,
+      400px 0;
+    }
+  }
+
+
+.location-text{
+  font-size: 4rem;
+  color: rgb(122, 227, 127);
+  font-weight: lighter;
+  text-shadow: 0.5px 0.5px 1px #000000;
+
+}
+
+.temp-text
+{
+  font-size: 7rem;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-shadow: #000000 1px 1px 2px;
+}
+
+.description-text{
+  font-size: 2.5rem;
+  color: rgb(180, 229, 255);
+  font-weight: lighter;
+  font-style: italic;
+  text-shadow: 0.5px 0.5px 1px #000000;
+  text-transform: capitalize
+  
+}
